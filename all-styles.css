@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*Font*/
+
+/* Navigation Bar */
+
+#head {
+	height: 182px;
+	padding: 0;
+	margin: 0;
+	background-color: darkblue;
+	background-image: url(images/seamless-beanie.png);
+	background-repeat: repeat;
+	position: relative;
+  	text-align: center;
+}
+
+#name {
+	position: absolute;
+	left: 15%;
+	bottom: 60px;
+	color: white;
+}
+
+.bg-image {
+	opacity: .2;
+}
+
+#place-holder {
+	width: 50%;
+}
+
+
+
+
+
+#profile-img {
+	position: absolute ;
+	right: 46% ;
+	top: 100px;
+	width: auto;
+
+}
+
+#profile-img img {
+	border: solid 5px #D96523;
+	border-radius: 50%;
+}
+
+nav {
+	display: flex;
+	background: #D96523;
+
+
+}
+
+#nav-links {
+	width: 50%;
+	
+}
+
+
+#nav-links > ul {
+	display: flex;
+	
+	margin: 0;
+	padding: 5px 0 0 0;
+	justify-content: center;
+	gap: 10px;
+}
+
+#nav-links li {
+	display: flex;
+	list-style-type: none;
+	position: relative;
+	transform: skew(10deg, 0);
+	border-bottom: none;
+	padding-bottom: 0;
+	background-image: url(images/folder-texture-3.jpg);
+	background-color: #F5B58E;
+	position: relative;
+	
+}
+
+#nav-links li {
+	position: relative;
+}
+
+
+	.dropdown {
+		position: absolute;
+		display: block;
+		/*flex-direction: column;*/
+		background-image: url(images/folder-texture-3.jpg);
+		opacity: 0;
+		display: none;
+		transition: 200ms ease-in-out;
+		top: 21px;
+		transform: skew(-10deg, 0);
+}
+
+
+.list-item-nav::after {
+	content: '';
+	position: absolute;
+}
+
+#nav-links li a {
+	text-decoration: none;
+	color: black;
+	padding: 3px 3px 0 3px;
+	transform: skew(-10deg, 0);
+}
+
+#nav-links li:hover {
+	background-image: url(images/folder-texture-2.jpg);
+}
+
+#nav-links li a:visited {
+	background-image: url(images/folder-texture-1.jpg);
+}
+
+.list-item-nav:hover .dropdown {
+	opacity: 1;
+	display: block;

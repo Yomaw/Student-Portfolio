@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Patrick+Hand&family=Roboto+Serif:wght@400;500&display=swap" rel="stylesheet"> 
+	<meta charset="utf-8">
+	<title>Leo Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/portfolio-style.css">
+	<link rel="stylesheet" type="text/css" href="css/all-styles.css">
+</head>
+<body>
+<header>
+	
+	<div id="head">
+		<div id="name"><h1>Leonardo Lollini</h1></div>
+		<div id="bg-head"></div>
+		</div>
+	
+<nav>
+
+	<div id="place-holder"></div>
+	
+	<div id="profile-img"><img src="images/P-Pic.png" height="100px" width="100px"></div>
+	<div id="nav-links"><ul>
+		<li><a href="Home.html">Home</a></li>
+		
+		
+		<li class="list-item-nav"><a  href="Porfolio.html">Porfolio</a> 
+		
+		<ul class="dropdown">
+    
+      <li><a href="Photography.html">Photography</a></li>
+      <li><a href="Videography.html">Videography</a></li>
+ 		 </ul>
+		</li>
+		<li><a href="Contact.html">Contact</a></li>
+ 		
+ 	
+		
+	
+	</ul></div>
+</nav>
+</header>
+
+
+<div id="body">
+<div id="video"> 
+<h2><a href="videos.html">Videography</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MxH1R_FxE2Q?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<div id="pictures">
+
+<h2> <a href="photography.html"> Photography
+</a></h2>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="p-images/Clouds.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="p-images/DSC01298.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <img src="p-images/_13_0040 2.jpg" style="width:100%">
+
+
+
+</div>
+
+</div>
+<br>
+ <div style="text-align:center"; visibility: hidden>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
